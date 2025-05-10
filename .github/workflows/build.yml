@@ -11,7 +11,7 @@ jobs:
 
         - name: Build Binary
           run: | 
-            clang -arch arm64 -framework Foundation -o inject_arm64 inject.m
+            clang -arch arm64 -framework Foundation -o inject_arm64 MacInject-Arm64.c
 
         - name: upload 
           uses: actions/upload-artifact@v4
