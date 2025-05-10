@@ -10,7 +10,8 @@ jobs:
         - uses actions/checkout@v3
 
         - name: Build Binary
-          run: | clang -arch arm64 -framework Foundation -o inject_arm64 inject.m
+          run: | 
+            clang -arch arm64 -framework Foundation -o inject_arm64 inject.m
 
         - name: upload 
           uses: actions/upload-artifact@v4
